@@ -25,4 +25,4 @@ reads_peer= PEER_getResiduals(model)
 Rscript /home/ls/rachelcw/projects/PEER/run_PEER.R /home/ls/rachelcw/projects/PEER/data_for_peer.tsv /home/ls/rachelcw/projects/PEER/run_peer 25
 #   #   #   DOCKER  #   #   # 
 docker pull gcr.io/broad-cga-francois-gtex/gtex_eqtl:V9
-docker run -v /home/ls/rachelcw/projects/PEER/:/data --rm gcr.io/broad-cga-francois-gtex/gtex_eqtl:V9 Rscript /src/run_PEER.R /data/data_for_peer_20221221.tsv /data/peer_20221221 25 > peer_run.log
+docker run -v /home/ls/rachelcw/projects/PEER/:/data --rm gcr.io/broad-cga-francois-gtex/gtex_eqtl:V9 Rscript /src/run_PEER.R /data/data_for_peer_20230109.tsv /data/peer_20230109 25 > peer_run.log
